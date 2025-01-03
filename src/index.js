@@ -6,9 +6,15 @@ import {
   TextInput,
   StyleSheet,
   I18nManager,
-  ViewPropTypes,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+
+const ViewPropTypes = {
+  style: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]),
+};
 
 const styles = StyleSheet.create({
   containerDefault: {},
